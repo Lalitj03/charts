@@ -12,15 +12,19 @@ export class Hello extends Component {
       },
       {
         name: "series2",
-        values: [ { x: 1, y: 82 }, { x: 21, y: 82 },{ x: 72, y: 82 }, { x: 73, y: 82 },{ x: 74, y: 82 }, { x: 75, y: 82 },{ x: 76, y: 82 }, { x: 77, y: 82 },{ x: 78, y: 82 }, { x: 79, y: 82 } ]
+        values: [ { x: 1, y: 22 }, { x: 2, y: 22 },{ x: 6, y: 22 }, { x: 7, y: 2 },{ x: 8, y: 8 }, { x: 9, y: 18 },{ x: 11, y: 40 }, { x: 12, y: 66 },{ x: 13, y: 57 }, { x: 14, y: 58 } ]
+      },
+      {
+        name: "series3",
+        values: [ { x: 0.5, y: 22 }, { x: 5.5, y: 2 },{ x: 6, y: 42 }, { x: 10, y: 25 },{ x: 12, y: 58 }, { x: 19, y: 18 },{ x: 21, y: 40 }, { x: 22, y: 46 },{ x: 26, y: 57 }, { x: 31, y: 48 } ]
       }
-    ];
+    ]
 
     return (
       <LineChart
         legend={true}
         data={lineData}
-        width={600}
+        width={800}
         height={400}
         title="Line Chart"
         yAxisLabel="Altitude"
